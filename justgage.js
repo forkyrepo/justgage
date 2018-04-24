@@ -36,7 +36,7 @@ JustGage = function(config) {
   var defaults = (config.defaults !== null && config.defaults !== undefined) ? config.defaults : false;
   if (defaults !== false) {
     config = extend({}, config, defaults);
-    delete config.defaults;
+    config.defaults = undefined;
   }
 
   // configurable parameters
